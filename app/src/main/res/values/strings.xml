@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TemporaryName</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="ingredienser">Ingredienser</string>
+    <string name="retter">Retter</string>
+    <string name="todo">TODO</string>
+    <string name="textview">TextView</string>
+</resources>

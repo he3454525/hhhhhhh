@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_ingredienser">
+
+    <fragment
+        android:id="@+id/navigation_ingredienser"
+        android:name="hermanka.hiof.no.temporaryname.ui.ingredienser.IngredienserFragment"
+        android:label="Ingredienser"
+        tools:layout="@layout/fragment_ingredienser" />
+
+    <fragment
+        android:id="@+id/navigation_retter"
+        android:name="hermanka.hiof.no.temporaryname.ui.retter.RetterFragment"
+        android:label="Retter"
+        tools:layout="@layout/fragment_retter" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="hermanka.hiof.no.temporaryname.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>

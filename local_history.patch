@@ -1,0 +1,16 @@
+Index: app/src/main/java/hermanka/hiof/no/temporaryname/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/hermanka/hiof/no/temporaryname/MainActivity.java	(date 1570570282390)
++++ app/src/main/java/hermanka/hiof/no/temporaryname/MainActivity.java	(date 1570570282390)
+@@ -48,7 +48,7 @@
+         ingrediensnavn.add("Test");
+         bildeUrls.add("https://i.gyazo.com/aa7d8872a17af29a5e462a0f0d9bf430.png");
+ 
+-        initRecyclerView();
++        //initRecyclerView();
+     }
+ 
+     private void initRecyclerView() {

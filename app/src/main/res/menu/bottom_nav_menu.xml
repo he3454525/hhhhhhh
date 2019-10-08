@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_ingredienser"
+        android:title="@string/ingredienser" />
+
+    <item
+        android:id="@+id/navigation_retter"
+        android:title="@string/retter" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:title="@string/title_notifications" />
+
+</menu>
