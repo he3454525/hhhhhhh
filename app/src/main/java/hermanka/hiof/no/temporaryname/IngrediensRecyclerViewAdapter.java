@@ -5,29 +5,30 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.ImageView;
 import android.widget.Toast;
+
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
+public class IngrediensRecyclerViewAdapter extends RecyclerView.Adapter<IngrediensRecyclerViewAdapter.ViewHolder> {
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
-
-    private static final String TAG = "RecyclerViewAdapter";
+    private static final String TAG = "IngrediensRecyclerViewAdapter";
 
     private ArrayList<String> mImageNames;
     private ArrayList<String> mImages;
     private Context mContext;
 
+    public IngrediensRecyclerViewAdapter(Context mContext, ArrayList<String> ingrediensnavn, ArrayList<String> bilder) {
+        Log.d(TAG, "IngrediensRecyclerViewAdapter: Called.");
 
-    public RecyclerViewAdapter(Context mContext, ArrayList<String> ingrediensnavn, ArrayList<String> bilder) {
-        Log.d(TAG, "RecyclerViewAdapter: Called.");
-
-        this.mImageNames = ingrediensnavn;
-        this.mImages = bilder;
+        mImageNames = ingrediensnavn;
+        mImages = bilder;
         this.mContext = mContext;
     }
 
@@ -35,7 +36,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Log.d(TAG, "onCreateViewHolder: Called.");
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_listitem, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_ingredienslistitem, parent, false);
         ViewHolder holder = new ViewHolder(view);
 
         return holder;
@@ -73,9 +74,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         public ViewHolder(View itemView) {
             super(itemView);
-            image = itemView.findViewById(R.id.image);
-            textV = itemView.findViewById(R.id.textView);
-            parentLayout = itemView.findViewById(R.id.parent_layout);
+            image = itemView.findViewById(R.id.ingrediensimage);
+            textV = itemView.findViewById(R.id.ingredienstextView);
+            parentLayout = itemView.findViewById(R.id.ingrediensparent_layout);
         }
     }
 }
